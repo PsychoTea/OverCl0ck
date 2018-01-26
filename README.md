@@ -28,7 +28,9 @@ In the future:
 - Full package manager for Watch tweaks
 - Get dough
 
-These slides may provide useful:
+These resources may provide useful:
+
+https://www.youtube.com/watch?v=eJpbi-Qz6Jc
 https://speakerdeck.com/mbazaliy/jailbreaking-apple-watch-1
 https://speakerdeck.com/mbazaliy/jailbreaking-apple-watch
 
