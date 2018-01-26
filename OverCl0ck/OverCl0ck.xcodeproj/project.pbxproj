@@ -20,6 +20,9 @@
 		B58A815C201A850200EE28E9 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A815B201A850200EE28E9 /* InterfaceController.m */; };
 		B58A815F201A850200EE28E9 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A815E201A850200EE28E9 /* ExtensionDelegate.m */; };
 		B58A8161201A850200EE28E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58A8160201A850200EE28E9 /* Assets.xcassets */; };
+		B58A8172201A8AB900EE28E9 /* v0rtex.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A8170201A8AB900EE28E9 /* v0rtex.m */; };
+		B58A8178201A8FD400EE28E9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A8176201A8F5900EE28E9 /* IOKit.framework */; };
+		B58A817B201A8FF100EE28E9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A8176201A8F5900EE28E9 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,13 @@
 		B58A815E201A850200EE28E9 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		B58A8160201A850200EE28E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58A8162201A850200EE28E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58A8170201A8AB900EE28E9 /* v0rtex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v0rtex.m; sourceTree = "<group>"; };
+		B58A8171201A8AB900EE28E9 /* v0rtex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v0rtex.h; sourceTree = "<group>"; };
+		B58A8173201A8ACB00EE28E9 /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
+		B58A8174201A8AEE00EE28E9 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		B58A8176201A8F5900EE28E9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../../System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
+		B58A8179201A8FE200EE28E9 /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Frameworks; path = ../../../../../../System/Library/Frameworks; sourceTree = "<group>"; };
+		B58A817C201A985B00EE28E9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58A817B201A8FF100EE28E9 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58A8178201A8FD400EE28E9 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +125,7 @@
 				B58A814A201A850200EE28E9 /* OverCl0ck WatchKit App */,
 				B58A8159201A850200EE28E9 /* OverCl0ck WatchKit Extension */,
 				B58A8131201A850200EE28E9 /* Products */,
+				B58A8175201A8F5800EE28E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,10 +172,24 @@
 				B58A815B201A850200EE28E9 /* InterfaceController.m */,
 				B58A815D201A850200EE28E9 /* ExtensionDelegate.h */,
 				B58A815E201A850200EE28E9 /* ExtensionDelegate.m */,
+				B58A8174201A8AEE00EE28E9 /* common.h */,
+				B58A8173201A8ACB00EE28E9 /* offsets.h */,
+				B58A8171201A8AB900EE28E9 /* v0rtex.h */,
+				B58A8170201A8AB900EE28E9 /* v0rtex.m */,
 				B58A8160201A850200EE28E9 /* Assets.xcassets */,
 				B58A8162201A850200EE28E9 /* Info.plist */,
 			);
 			path = "OverCl0ck WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B58A8175201A8F5800EE28E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B58A817C201A985B00EE28E9 /* IOKit.framework */,
+				B58A8179201A8FE200EE28E9 /* Frameworks */,
+				B58A8176201A8F5900EE28E9 /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58A8172201A8AB900EE28E9 /* v0rtex.m in Sources */,
 				B58A815F201A850200EE28E9 /* ExtensionDelegate.m in Sources */,
 				B58A815C201A850200EE28E9 /* InterfaceController.m in Sources */,
 			);
