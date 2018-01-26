@@ -12,6 +12,8 @@ Feel free to play around with this and let me know if you find anything interest
 
 Post-exploitation shouldn't be too difficult, as the Watch is 32bit, therefore no KPP.
 
+**Please remember to work from the 'develop' branch, and submit PR's there. NOT master.**
+
 To-do:
 - Fix watch_offsetfinder to correctly find sizeof_task and iouserclient_ipc
 - Get v0rtex to run correctly
