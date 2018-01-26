@@ -8,23 +8,36 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--OverCl0ck-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller title="OverCl0ck" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label width="136" height="26" alignment="center" text="OverCl0ck" textAlignment="center" numberOfLines="0" id="DdX-XW-byW">
+                        <label width="136" height="21" alignment="center" text="OverCl0ck" textAlignment="center" numberOfLines="0" id="DdX-XW-byW">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <label height="17" alignment="center" text="made by PsychoTea" textAlignment="center" id="Qzc-4y-7en">
+                        <label height="15" alignment="center" text="made by PsychoTea" textAlignment="center" id="Qzc-4y-7en">
                             <color key="textColor" red="0.71151253172588835" green="0.71151253172588835" blue="0.71151253172588835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                         </label>
+                        <separator alignment="left" id="ZSw-So-whQ">
+                            <color key="color" red="0.60416005710659904" green="0.60416005710659904" blue="0.60416005710659904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
                         <button width="1" alignment="left" title="run the ting" id="k3O-rQ-pZN">
-                            <color key="titleColor" red="1" green="0.015390084601295095" blue="0.067932707464305131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="backgroundColor" red="0.2210674033950801" green="0.22251951167616579" blue="0.22638404187817263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleColor" red="1" green="0.015390084599999999" blue="0.067932707460000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="runTheTingButton" destination="AgC-eL-Hgc" id="eeR-Cw-t8E"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="38" alignment="left" title="test log" id="9rY-qE-mEj">
+                            <connections>
+                                <action selector="testbutton" destination="AgC-eL-Hgc" id="9ba-y0-88z"/>
+                            </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="runButton" destination="k3O-rQ-pZN" id="W8P-mq-ITA"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="31.384615384615387" y="48.384615384615387"/>
