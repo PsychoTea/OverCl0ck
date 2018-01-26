@@ -26,4 +26,8 @@ In the future:
 - Full package manager for Watch tweaks
 - Get dough
 
-RIP Apple Watch, April 2015 - January 2018💀
+These slides may provide useful:
+https://speakerdeck.com/mbazaliy/jailbreaking-apple-watch-1
+https://speakerdeck.com/mbazaliy/jailbreaking-apple-watch
+
+RIP Apple Watch, April 2015 - January 2018 💀
