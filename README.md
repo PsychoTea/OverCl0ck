@@ -1,3 +1,5 @@
+# Untested!
+Completely untested!
 ## OverCl0ck
 
 A (currently) early prototype concept for an Apple Watch Jailbreak. Uses the v0rtex kernel exploit, and therefore supports watchOS3. Exactly compatbility across OS versions and hardware is unknown. Most things are unknown.
