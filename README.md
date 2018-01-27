@@ -36,4 +36,10 @@ https://speakerdeck.com/mbazaliy/jailbreaking-apple-watch-1
 
 https://speakerdeck.com/mbazaliy/jailbreaking-apple-watch
 
+### Compatibility
+Because of the way that I (fr3x31dev) implemented the FS patch, it rules out any support on watchOS 4.x. This can be improved through some other function (can't remember it off the top of my head, I focus on pre-iOS 11 development) that Apple **DIDN'T** patch, making this able to work until watchOS 4.1 (provided exploits, and other patches) I don't know how feasiable this is, if anyone actually uses it.
+
+### Version
+Beta 2: Introduced FS patch. :January 26th, 2018.
+
 RIP Apple Watch, April 2015 - January 2018 💀
