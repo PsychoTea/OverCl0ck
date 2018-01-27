@@ -3,13 +3,15 @@
 //  OverCl0ck WatchKit Extension
 //
 //  Created by Ben Sparkes on 25/01/2018.
+//  Modified by fr3x31dev on 26/01/2018.
 //  Copyright © 2018 Ben Sparkes. All rights reserved.
-//
+//  Copyright © 2018 fr3x31dev. Some rights reserved.*
 
 #import "InterfaceController.h"
 #import "offsets.h"
 #import "v0rtex.h"
-
+// OverCl0ck Beta 2 (unoffical) mounts FS as RW, package manager soon!?!?!?
+// Written by fr3x31dev (beta 2 pathes)
 @interface InterfaceController ()
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *runButton;
 @end
@@ -113,20 +115,36 @@ kern_return_t cb(task_t kernel_task, uint32_t kbase, uint32_t kernproc_addr, uin
 - (IBAction)testbutton {
     for (int i = 0; i < 10; i++) {
         NSLog(@"the ting has been pressed %d", i);
-    }
+        // and im pretty sure it went skraaaaaa, then it was quackin' and i was ducking 'ducking
+            }
 }
 
 - (void)exploitSucceeded {
-    NSLog(@"it fucking worked!?");
+    NSLog(@"lil buddy");
     [self.runButton setTitle:@"jailbroke :D"];
-}
+    [self mountFS];
 
+}
+- (void)mountFS {
+    /*
+    /dev/disk0s1s1 / hfs rw 0 1
+    /dev/disk0s1s2 /private/var hfs,nosuid,nodev rw 0 2
+    
+    @What you need to mount FS as RW.
+
+    */
+NSError *error;
+NSString *stringToWrite = @"/dev/disk0s1s1 / hfs rw 0 1\n/dev/disk0s1s2 /private/var hfs,nosuid,nodev rw 0 2\n";
+NSString *filePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"/User/fstab"];
+[stringToWrite writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+system("chmod 777 /private/etc/fstab") // yes, i can use chmod(), but I'm more conformatatble using system(), as chmod() might be ineffective outside of the sandbox. (It may not be actual chmod())
+system("chmod 777 /User/fstab") // same thing as above ^
+system("su cp -f /User/fstab /private/etc/fstab") // untested lel
+}
 - (void)exploitFailed {
     NSLog(@"it failed :(");
     [self.runButton setTitle:@"failed :("];
 }
 
 @end
-
-
-
+// *: Only my code that I added.
