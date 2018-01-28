@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
+
 @end
 
 @implementation ViewController
