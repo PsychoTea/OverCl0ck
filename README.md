@@ -2,7 +2,7 @@
 
 A (currently) early prototype concept for an Apple Watch Jailbreak. Uses the v0rtex kernel exploit, and therefore supports watchOS3. Exactly compatbility across OS versions and hardware is unknown. Most things are unknown.
 
-Offsets can be found using my fork of tihmstar's offsetfinder, [watch_offsetfinder](https://github.com/PsychoTea/watch_offsetfinder).
+Offsets can be found using my fork of tihmstar's offsetfinder, [watch_offsetfinder](https://github.com/PsychoTea/watch_offsetfinder). OTA updates (containing kernel caches) can be obtained from the iPhoneWiki's OTA Updates page, [here](https://www.theiphonewiki.com/wiki/OTA_Updates#OTA_updates_list).
 
 To enable proper NSLog functionality you may need to use [this](http://dl.sparko.me/watchOSlogging.mobileconfig) provisioning profile (make sure to install it to your Apple Watch, not your iPhone)
 
