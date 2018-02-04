@@ -10,6 +10,10 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
+
+- (IBAction)launch:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -26,4 +30,6 @@
 }
 
 
+- (IBAction)launch:(id)sender {
+}
 @end
